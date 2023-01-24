@@ -49,6 +49,6 @@ Once inside the remote desktop, go to windows > control panel > programs > turn 
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Following those steps the next thing is to install all of the instalation files as specified: From the Installation Files, download and install PHP Manager for IIS > download and install the Rewrite Module > Create the directory C:\PHP > download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP > download and install VC_redist.x86.exe > download and install MySQL 5.5.62. After all of that is done we can continue to launch the configuration wizard for the MySQL program and choose the standard configuration, click next until greeted with a root password screen, then choose a password to your liking.
 </p>
 <br />
