@@ -24,6 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - osTicket installation files
 - HeidiSQL
 - Install C++ distributions
+- "installation files: https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6" 
 
 <h2>Installation Steps</h2>
 
@@ -49,7 +50,7 @@ Once inside the remote desktop, go to windows > control panel > programs > turn 
 </p>
 
 <p>
-Following those steps the next thing is to install all of the instalation files as specified: From the Installation Files, download and install PHP Manager for IIS > download and install the Rewrite Module > Create the directory C:\PHP > download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP > download and install VC_redist.x86.exe > download and install MySQL 5.5.62. After all of that is done we can continue to launch the configuration wizard for the MySQL program and choose the standard configuration, click next until greeted with a root password screen, then choose a password to your liking.
+Following those steps the next thing is to install is all of the installation files as specified from the "Installation Files", download and install PHP Manager for IIS > download and install the Rewrite Module > Create the directory C:\PHP > download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP > download and install VC_redist.x86.exe > download and install MySQL 5.5.62. After all of that is done we can continue to launch the configuration wizard for the MySQL program and choose the standard configuration, click next until greeted with a root password screen, then choose a password to your liking.
 </p>
 <br />
 
@@ -58,7 +59,7 @@ Following those steps the next thing is to install all of the instalation files 
 </p>
 
 <p>
-Open IIS as an Admin, register PHP from within IIS then Reload IIS (Open IIS, Stop and Start the server). Install osTicket, download osTicket from the Installation Files Folder. Extract and copy “upload” folder to c:\inetpub\wwwroot, then Within c:\inetpub\wwwroot, rename “upload” to “osTicket”. Reload IIS (Open IIS, Stop and Start the server). Go to sites > Default > osTicket. On the right, click “Browse *:80”. Note that some extensions are not enabled. Go back to IIS, sites > Default > osTicket > Double-click PHP Manager > Click “Enable or disable an extension” > Enable: php_imap.dll, Enable: php_intl.dll, Enable: php_opcache.dll > Refresh the osTicket site in your browse, observe the changes. Following that rename: ost-config.php from: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to: C:\inetpub\wwwroot\osTicket\include\ost-config.php > Assign Permissions: ost-config.php > Disable inheritance > Remove All > New Permissions > Everyone > All. Continue Setting up osTicket in the browser (click Continue), name Helpdesk, default email (receives email from customers). From the Installation Files, download and install HeidiSQL. Then open Heidi SQL > create a new session, root and created password > connect to the session > create a database called “osTicket”. Continue Setting up osticket in the browser, then  click “Install Now!”
+Open IIS as an Admin, register PHP from within IIS then Reload IIS (Open IIS, Stop and Start the server). Install osTicket, download osTicket from the "Installation Files" folder. Extract and copy “upload” folder to c:\inetpub\wwwroot, then Within c:\inetpub\wwwroot, rename “upload” to “osTicket”. Reload IIS (Open IIS, Stop and Start the server). Go to sites > Default > osTicket. On the right, click “Browse *:80”. Note that some extensions are not enabled. Go back to IIS, sites > Default > osTicket > Double-click PHP Manager > Click “Enable or disable an extension” > Enable: php_imap.dll, Enable: php_intl.dll, Enable: php_opcache.dll > Refresh the osTicket site in your browse, observe the changes. Following that rename: ost-config.php from: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to: C:\inetpub\wwwroot\osTicket\include\ost-config.php > Assign Permissions: ost-config.php > Disable inheritance > Remove All > New Permissions > Everyone > All. Continue Setting up osTicket in the browser (click Continue), name Helpdesk, default email (receives email from customers). From the Installation Files, download and install HeidiSQL. Then open Heidi SQL > create a new session > root and created password > connect to the session > create a database called “osTicket”. Continue Setting up osticket in the browser, then  click “Install Now!”
 </p>
 <br />
 
